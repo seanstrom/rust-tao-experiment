@@ -1,0 +1,16 @@
+[package]
+name = "Totodoro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["tray"]
+tray = []
+
+[dependencies]
+log = "0.4.17"
+tao = { version = "0.14.0", features = ["tray"] }
+env_logger = "0.9.1"
+image = "0.24.4"
